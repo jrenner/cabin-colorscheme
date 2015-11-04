@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "cabin-jrenner"
+let g:colors_name = "jrencabin"
 
 
 " General VIM chrome.
@@ -22,7 +22,7 @@ hi StatusLineNC NONE guifg=#303030 ctermfg=236 guibg=#000000 ctermbg=0
 hi VertSplit NONE guifg=#000000 ctermfg=0
 
 function! s:StatusLine(focus)
-  if exists("g:colors_name") && g:colors_name == "cabin"
+  if exists("g:colors_name") && g:colors_name == "jrencabin"
     if a:focus
       hi StatusLine NONE guifg=#d0d0d0 ctermfg=252 guibg=#000000 ctermbg=0
     else
@@ -34,7 +34,7 @@ endfunction
 call s:StatusLine(1)
 
 " When another window has focus, no status line is current.
-augroup cabin_colorscheme
+augroup jrencabin_colorscheme
     au!
     au FocusLost * call s:StatusLine(0)
     au FocusGained * call s:StatusLine(1)
