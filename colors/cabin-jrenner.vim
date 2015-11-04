@@ -15,14 +15,14 @@ let g:colors_name = "cabin-jrenner"
 
 " General VIM chrome.
 
-hi Normal NONE guifg=#8a8a8a ctermfg=245 guibg=#1c1c1c
+hi Normal NONE guifg=#999 ctermfg=245 guibg=#1c1c1c
 hi Cursor NONE guifg=#000000 ctermfg=0 guibg=#5fff87 ctermbg=84
 hi MatchParen NONE gui=bold cterm=bold guifg=#5fff87 ctermfg=84
 hi StatusLineNC NONE guifg=#303030 ctermfg=236 guibg=#000000 ctermbg=0
 hi VertSplit NONE guifg=#000000 ctermfg=0
 
 function! s:StatusLine(focus)
-  if exists("g:colors_name") && g:colors_name == "cabin"
+  if exists("g:colors_name") && g:colors_name == "cabin-jrenner"
     if a:focus
       hi StatusLine NONE guifg=#d0d0d0 ctermfg=252 guibg=#000000 ctermbg=0
     else
@@ -34,7 +34,7 @@ endfunction
 call s:StatusLine(1)
 
 " When another window has focus, no status line is current.
-augroup cabin_colorscheme
+augroup cabin-jrenner_colorscheme
     au!
     au FocusLost * call s:StatusLine(0)
     au FocusGained * call s:StatusLine(1)
@@ -82,7 +82,7 @@ hi Comment NONE gui=italic guifg=#585858 ctermfg=240
 " TODO: Constant isn't in the 256-color palette.
 "hi Constant NONE guifg=#8b002e ctermfg=88
 hi Constant NONE guifg=#d66 ctermfg=88
-hi Identifier NONE guifg=#699 gui=bold ctermfg=97
+hi Identifier NONE guifg=#aad gui=none ctermfg=97
 hi Statement NONE gui=bold cterm=bold guifg=#977 ctermfg=103
 hi Type NONE guifg=#8cc ctermfg=60
 hi Operator NONE guifg=#ccb ctermfg=242
