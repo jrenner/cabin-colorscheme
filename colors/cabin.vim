@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "cabin"
+let g:colors_name = "cabin-jrenner"
 
 
 " General VIM chrome.
@@ -80,12 +80,13 @@ hi DiffText NONE guibg=#303030 ctermbg=236
 
 hi Comment NONE gui=italic guifg=#585858 ctermfg=240
 " TODO: Constant isn't in the 256-color palette.
-hi Constant NONE guifg=#8b002e ctermfg=88
-hi Identifier NONE guifg=#875faf ctermfg=97
-hi Statement NONE gui=bold cterm=bold guifg=#8787af ctermfg=103
-hi Type NONE guifg=#5f5f87 ctermfg=60
-hi Operator NONE guifg=#6c6c6c ctermfg=242
-hi PreProc NONE guifg=#5f5faf ctermfg=61
+"hi Constant NONE guifg=#8b002e ctermfg=88
+hi Constant NONE guifg=#d66 ctermfg=88
+hi Identifier NONE guifg=#699 gui=bold ctermfg=97
+hi Statement NONE gui=bold cterm=bold guifg=#977 ctermfg=103
+hi Type NONE guifg=#8cc ctermfg=60
+hi Operator NONE guifg=#ccb ctermfg=242
+hi PreProc NONE guifg=#88f ctermfg=61
 "hi Special NONE guifg=#5f5f87 ctermfg=60  " TODO: Consider this instead
 hi Special NONE guifg=#5f8787 ctermfg=66
 
