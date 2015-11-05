@@ -87,7 +87,7 @@ hi Constant NONE guifg=#aa4 ctermfg=88
 hi Identifier NONE guifg=#aad gui=none ctermfg=97
 hi Statement NONE gui=bold cterm=bold guifg=#977 ctermfg=103
 hi Type NONE guifg=#8cc ctermfg=60
-hi Operator NONE guifg=#ccb ctermfg=242
+hi Operator NONE guifg=#eed ctermfg=242
 hi PreProc NONE guifg=#88f ctermfg=61
 "hi Special NONE guifg=#5f5f87 ctermfg=60  " TODO: Consider this instead
 hi Special NONE guifg=#5f8787 ctermfg=66
