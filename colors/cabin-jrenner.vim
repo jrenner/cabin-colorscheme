@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "cabin-jrenner"
+let g:colors_name = "jrencabin"
 
 
 " General VIM chrome.
@@ -22,7 +22,11 @@ hi StatusLineNC NONE guifg=#303030 ctermfg=236 guibg=#000000 ctermbg=0
 hi VertSplit NONE guifg=#000000 ctermfg=0
 
 function! s:StatusLine(focus)
+<<<<<<< HEAD:colors/cabin-jrenner.vim
   if exists("g:colors_name") && g:colors_name == "cabin-jrenner"
+=======
+  if exists("g:colors_name") && g:colors_name == "jrencabin"
+>>>>>>> c89f147be4d278a5b81331cd622fa11a24997ed9:colors/cabin.vim
     if a:focus
       hi StatusLine NONE guifg=#d0d0d0 ctermfg=252 guibg=#000000 ctermbg=0
     else
@@ -34,7 +38,11 @@ endfunction
 call s:StatusLine(1)
 
 " When another window has focus, no status line is current.
+<<<<<<< HEAD:colors/cabin-jrenner.vim
 augroup cabin-jrenner_colorscheme
+=======
+augroup jrencabin_colorscheme
+>>>>>>> c89f147be4d278a5b81331cd622fa11a24997ed9:colors/cabin.vim
     au!
     au FocusLost * call s:StatusLine(0)
     au FocusGained * call s:StatusLine(1)
@@ -81,7 +89,7 @@ hi DiffText NONE guibg=#303030 ctermbg=236
 hi Comment NONE gui=italic guifg=#585858 ctermfg=240
 " TODO: Constant isn't in the 256-color palette.
 "hi Constant NONE guifg=#8b002e ctermfg=88
-hi Constant NONE guifg=#d66 ctermfg=88
+hi Constant NONE guifg=#aa4 ctermfg=88
 hi Identifier NONE guifg=#aad gui=none ctermfg=97
 hi Statement NONE gui=bold cterm=bold guifg=#977 ctermfg=103
 hi Type NONE guifg=#8cc ctermfg=60
