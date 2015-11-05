@@ -22,11 +22,7 @@ hi StatusLineNC NONE guifg=#303030 ctermfg=236 guibg=#000000 ctermbg=0
 hi VertSplit NONE guifg=#000000 ctermfg=0
 
 function! s:StatusLine(focus)
-<<<<<<< HEAD:colors/cabin-jrenner.vim
   if exists("g:colors_name") && g:colors_name == "cabin-jrenner"
-=======
-  if exists("g:colors_name") && g:colors_name == "jrencabin"
->>>>>>> c89f147be4d278a5b81331cd622fa11a24997ed9:colors/cabin.vim
     if a:focus
       hi StatusLine NONE guifg=#d0d0d0 ctermfg=252 guibg=#000000 ctermbg=0
     else
@@ -38,11 +34,7 @@ endfunction
 call s:StatusLine(1)
 
 " When another window has focus, no status line is current.
-<<<<<<< HEAD:colors/cabin-jrenner.vim
 augroup cabin-jrenner_colorscheme
-=======
-augroup jrencabin_colorscheme
->>>>>>> c89f147be4d278a5b81331cd622fa11a24997ed9:colors/cabin.vim
     au!
     au FocusLost * call s:StatusLine(0)
     au FocusGained * call s:StatusLine(1)
