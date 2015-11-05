@@ -43,7 +43,9 @@ augroup end
 hi CursorColumn NONE guibg=#080808 ctermbg=232
 hi CursorLine NONE guibg=#080808 ctermbg=232
 hi ColorColumn NONE guibg=#080808 ctermbg=232
-hi LineNr NONE guifg=#303030 ctermfg=236 guibg=#080808 ctermbg=232
+"hi LineNr NONE guifg=#303030 ctermfg=236 guibg=#080808 ctermbg=232
+hi LineNr NONE guifg=#555 ctermfg=236 guibg=#1d1d1d ctermbg=232
+
 hi SignColumn NONE guifg=#303030 ctermfg=236 guibg=#080808 ctermbg=232
 hi FoldColumn NONE guibg=#080808 ctermbg=232
 hi Folded NONE guifg=#af8787 ctermfg=138
@@ -94,3 +96,6 @@ hi Underlined NONE  " TODO
 hi Ignore guifg=#000000 ctermfg=0
 hi Error NONE guifg=#b2b2b2 ctermfg=249 guibg=#af0000 ctermbg=124
 hi Todo NONE gui=bold cterm=bold guifg=#000000 ctermfg=0 guibg=#8787af ctermbg=103
+
+" Python
+hi pythonNumber guifg=#d44
