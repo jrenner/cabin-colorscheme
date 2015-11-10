@@ -84,7 +84,7 @@ hi Comment NONE gui=italic guifg=#585858 ctermfg=240
 " TODO: Constant isn't in the 256-color palette.
 "hi Constant NONE guifg=#8b002e ctermfg=88
 hi Constant NONE guifg=#bb7 ctermfg=88
-hi Identifier NONE guifg=#587 ctermfg=97 gui=bold
+hi Identifier NONE guifg=#d8c ctermfg=97 gui=bold
 hi Statement NONE gui=bold cterm=bold guifg=#69d ctermfg=103
 hi Type NONE guifg=#8cc ctermfg=60
 hi Operator NONE guifg=#faa ctermfg=242
